@@ -1,5 +1,5 @@
 require 'sinatra/base'
-class RockPaperScissors < Sinatra::Base
+class Bookmark < Sinatra::Base
   get '/test' do
     'test page'
   end
