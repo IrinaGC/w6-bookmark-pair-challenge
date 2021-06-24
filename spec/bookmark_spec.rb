@@ -17,5 +17,14 @@ describe Bookmark do
     end
   end
 
+  describe '.create' do
+
+    it "adds a new bookmark to the database" do
+      con = PG.connect(dbname: 'bookmark_manager_test')
+      Bookmark.create('http://www.blas.com')
+      con.exec("INSERT INTO bookmarks (url) VALUES ('http://www.blas.com');")
+      expect(Bookmark.all).to include('http://www.blas.com')
+    end
+  end
   
 end

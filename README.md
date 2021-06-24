@@ -15,7 +15,15 @@ You're going to build a bookmark manager. A bookmark manager is a website to mai
 The website will have the following **specification**:
 
 - [ ] Show a list of bookmarks
+      As a user,
+      So that I can see what I saved
+      I want **to see** a list of **the bookmarks**.
+
 - [ ] Add new bookmarks
+      As a user,
+      So that I can save my bookmarks
+      I want **add** them to a list of **the bookmarks**.
+
 - [ ] Delete bookmarks
 - [ ] Update bookmarks
 - [ ] Comment on bookmarks
